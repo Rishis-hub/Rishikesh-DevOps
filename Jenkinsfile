@@ -38,16 +38,22 @@ pipeline {
         }
 
         stage('Unit Test') {
-            steps {
-                echo '========== Stage: Unit Test =========='
-                sh 'mvn test'
-            }
-            post {
-                always {
+    steps {
+        echo '========== Stage: Unit Test =========='
+        sh 'mvn test'
+    }
+    post {
+        always {
+            script {
+                if (fileExists('target/surefire-reports')) {
                     junit 'target/surefire-reports/*.xml'
+                } else {
+                    echo 'No test reports found - skipping junit step'
                 }
             }
         }
+    }
+}
 
         stage('SonarQube Analysis') {
             steps {
