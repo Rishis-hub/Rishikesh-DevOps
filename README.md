@@ -126,7 +126,7 @@ git clone https://github.com/Rishis-hub/Rishikesh-DevOps.git
 ---
 ## ✅ Pipeline Success Screenshot
 
-![Jenkins Pipeline](jenkins-pipeline.png)
+![Jenkins Pipeline](Jenkins-cicd-pipeline.png)
 
 
 ## 👤 Author
