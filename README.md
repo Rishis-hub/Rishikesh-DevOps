@@ -124,6 +124,10 @@ git clone https://github.com/Rishis-hub/Rishikesh-DevOps.git
 - Zero-downtime deployments via rolling update strategy
 
 ---
+## ✅ Pipeline Success Screenshot
+
+![Jenkins Pipeline](jenkins-pipeline.png)
+
 
 ## 👤 Author
 
